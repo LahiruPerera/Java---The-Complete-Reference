@@ -81,8 +81,9 @@ from C/C++)
 Java supports dynamic compilation and automatic memory management (garbage collection).
 
 Few important features provided by **JAVA 8**:
-    - Lambda expressions
-    - Method references
-    - Functional interfaces
-    - Stream API
-    - Default methods
+
+   - Lambda expressions
+   - Method references
+   - Functional interfaces
+   - Stream API
+   - Default methods
