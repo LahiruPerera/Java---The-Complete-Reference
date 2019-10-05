@@ -1,29 +1,29 @@
 # The history and evolution of Java
 
--Java is related to C++(which is a direct descendant of C)
--Java derived its syntax from C.
--Java's Object Oriented feature from C++.
+- Java is related to C++(which is a direct descendant of C)
+- Java derived its syntax from C.
+- Java's Object Oriented feature from C++.
 
--C is the first structured, efficient, high-level language.
--C is a language designed by and for programmers.
--C++ extends C by adding object-oriented features.
+- C is the first structured, efficient, high-level language.
+- C is a language designed by and for programmers.
+- C++ extends C by adding object-oriented features.
 
-##Java Applets
-   -An applet is a special kind of Java program that is designed to be transmitted over the Internet and automatically 
+## Java Applets
+   - An applet is a special kind of Java program that is designed to be transmitted over the Internet and automatically 
    executed by a Java-compatible web browser. (small programs)
-   -Applet allows some functionality to be moved from the server to the client.
-   -Applets dynamically extend the functionality of a web browser
-   -Security : by limiting an applet to the Java execution environmentand not allowing it access to other parts of the 
+   - Applet allows some functionality to be moved from the server to the client.
+   - Applets dynamically extend the functionality of a web browser
+   - Security : by limiting an applet to the Java execution environmentand not allowing it access to other parts of the 
    computer
-   -Portability : java compiler generates the bytecode. The bytecode is platform independent.
+   - Portability : java compiler generates the bytecode. The bytecode is platform independent.
 	(can run on any platform or machine) HotSpot provides a Just-In-Time (JIT) compiler for bytecode.
 	
-##Servlets
-   -A servlet is a small program that executes on the server. 
-   -Servlets dynamically extend the functionality of a web server
-   -Servlets are used to create dynamically generated content that is then served to the client.
+## Servlets
+   - A servlet is a small program that executes on the server. 
+   - Servlets dynamically extend the functionality of a web server
+   - Servlets are used to create dynamically generated content that is then served to the client.
 	
-###The Java Buzzwords
+### The Java Buzzwords
 
 -**Simple** : 
     Java is very easy to learn, and its syntax is simple, clean and easy to understand. (most features are inherited 
