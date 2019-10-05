@@ -36,6 +36,7 @@ from C/C++)
     our software as a combination of different types of objects that incorporates both data and behavior.
     
 	*Basic concepts of OOPs* are:
+	
 		- Object
 		- Class
 		- Inheritance
@@ -46,6 +47,7 @@ from C/C++)
 - **Robust** :
 
     *program must execute reliably.* Java is robust because:
+    
 		- It uses strong memory management.
 		- There is a lack of pointers that avoids security problems.
 		- There is automatic garbage collection in java which runs on the Java Virtual Machine to get rid of objects 
@@ -80,6 +82,7 @@ from C/C++)
 Java supports dynamic compilation and automatic memory management (garbage collection).
 
 Few important features provided by **JAVA 8**:
+
    - Lambda expressions
    - Method references
    - Functional interfaces

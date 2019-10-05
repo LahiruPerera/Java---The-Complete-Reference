@@ -50,4 +50,4 @@ a well-defined object. We do not think about individual parts.
    
    *if(condition) statement;*
    
-   - condition is a boolean expression. I f condition is true, then the statement is true.
+   - condition is a boolean expression. If condition is true, then the statement is true.
