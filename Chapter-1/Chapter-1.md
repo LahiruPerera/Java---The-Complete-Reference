@@ -36,12 +36,12 @@ from C/C++)
     our software as a combination of different types of objects that incorporates both data and behavior.
     
 	*Basic concepts of OOPs* are:
-- Object
-- Class
-- Inheritance
-- Polymorphism
-- Abstraction
-- Encapsulation
+ - Object
+ - Class
+ - Inheritance
+ - Polymorphism
+ - Abstraction
+ - Encapsulation
 
 - **Robust** :
 
