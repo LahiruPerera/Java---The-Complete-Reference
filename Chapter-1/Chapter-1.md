@@ -34,26 +34,31 @@ from C/C++)
 
     Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize 
     our software as a combination of different types of objects that incorporates both data and behavior.
+    
 	*Basic concepts of OOPs* are:
-		-Object
-		-Class
-		-Inheritance
-		-Polymorphism
-		-Abstraction
-		-Encapsulation
+		- Object
+		- Class
+		- Inheritance
+		- Polymorphism
+		- Abstraction
+		- Encapsulation
 
-- **Robust** : *program must execute reliably.* Java is robust because:
-		-It uses strong memory management.
-		-There is a lack of pointers that avoids security problems.
-		-There is automatic garbage collection in java which runs on the Java Virtual Machine to get rid of objects 
+- **Robust** :
+
+    *program must execute reliably.* Java is robust because:
+		- It uses strong memory management.
+		- There is a lack of pointers that avoids security problems.
+		- There is automatic garbage collection in java which runs on the Java Virtual Machine to get rid of objects 
 		which are not being used by a Java application anymore.
-		-There are exception handling and the type checking mechanism in Java. All these points make Java robust.
+		- There are exception handling and the type checking mechanism in Java. All these points make Java robust.
 		
 - **Architecture neutral** :
+
 	Java is architecture neutral because there are no implementation dependent features, for example, the size of
 	primitive types is fixed.
 	
 - **Interpreted & High Performance** :
+
     Java is faster than other traditional interpreted programming languages because Java bytecode is "close" to native 
     code.
 	
@@ -64,15 +69,17 @@ from C/C++)
     shares a common memory area.
 	
 - **Distributed** :
+
     It facilitates users to create distributed applications.RMI and EJB are used for creating distributed applications. 
     This feature enables a program to invoke methods across a network
 	
-- **Dynamic** : 
+- **Dynamic** :
+
     Java is a dynamic language. It supports dynamic loading of classes. It means classes are loaded on demand.
 	
 Java supports dynamic compilation and automatic memory management (garbage collection).
 
-Few important features provided by JAVA 8:
+Few important features provided by **JAVA 8**:
    - Lambda expressions
    - Method references
    - Functional interfaces
