@@ -27,10 +27,11 @@
 
 - **Simple** : 
 
-Java is very easy to learn, and its syntax is simple, clean and easy to understand. (most features are inherited 
+    Java is very easy to learn, and its syntax is simple, clean and easy to understand. (most features are inherited 
 from C/C++)
 	
 - **Object-Oriented** :
+
     Java is an object-oriented programming language. Everything in Java is an object. Object-oriented means we organize 
     our software as a combination of different types of objects that incorporates both data and behavior.
 	*Basic concepts of OOPs* are:
