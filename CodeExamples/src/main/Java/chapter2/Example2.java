@@ -1,4 +1,4 @@
-package chapter2;
+package main.Java.chapter2;
 
 public class Example2 {
     public static void main(String[] args) {

@@ -50,4 +50,63 @@ a well-defined object. We do not think about individual parts.
    
    *if(condition) statement;*
    
-   - condition is a boolean expression. If condition is true, then the statement is true.
+   - condition is a boolean expression. If condition is true, then the statement is executed. If condition is false, then
+   the statement is bypassed.
+   
+   **The for Loop**:
+   
+   *for(initialization; condition; iteration) statement;*
+   
+   - *initialization* portion of the loop sets a loop control variable to an initial value.
+   - *condition* is a boolean tha tests the loop control variable. If it is true, then continues to iterate. If it is 
+   false, the loop terminate.
+   - iteration determines how the loop control variable is changed each time when the loop iterate
+
+### Using blocks of code
+
+   - two or more statements can be grouped into *blocks of code (code blocks)*
+   
+### Lexical Issues
+
+   - atomic elements of Java
+   - Java programs are a collection of whitespace, identifiers, literals, comments, operators, separators, and keywords
+   
+   **Whitespace**
+   
+   - Java is a free-form language. ( no need to follow any special indentation rules )
+   - In Java, whitespace is a space, tab, or newline
+   
+   **Identifiers**
+   
+   - Identifiers are used to name things, such as classes, variables, and methods
+   - must not begin with a number
+   - Java is case-sensitive, so VALUE is a different identifier than Value
+   - NOTE Beginning with JDK 8, the use of an underscore by itself as an identifier is not recommended.
+
+   **Literals**
+   
+   - A constant value in Java is created by using a literal representation of it
+   - A literal can be used anywhere a value of its type is allowed.
+   
+   **Comments**
+   
+   - Three types of comments:
+       - single-line
+       - multiline
+       - documentation comment (/** */)
+   
+   **Separators**
+   
+   - Parentheses - ()
+   - Braces - {}
+   - Brackets - []
+   - Semicolon - ;
+   - Comma - ,
+   - Period - .
+   - Colons - :: - used to create a method or constructor reference (Added by JDK 8)
+   
+   **The java Keywords**
+   
+   - There are 50 keywords currently defined in Java
+   - These keywords cannot be used as identifiers. Thus, they cannot be used as names for a variable, class, or method
+   - also reserves true, false and null
