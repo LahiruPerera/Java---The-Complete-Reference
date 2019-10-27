@@ -131,7 +131,6 @@ evaluation of B will determine the final result.
                
                           
     int x, y, z;
-    
     x = y = z = 100; // set x, y, and z to 100
     
 ### The ? Operator
