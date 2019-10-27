@@ -68,9 +68,11 @@ form is shown here:
      remainder
    
    int a = 32;
+   
    a = a >> 2; // a now contains 8
    
    int a = 35;
+   
    a = a >> 2; // a contains 8
    
 #### The Unsigned Right Shift (>>>)
@@ -83,7 +85,7 @@ form is shown here:
       11111111 11111111 11111111 11111111 –1 in binary as an int
     
       >>> 24 
-                                                                                                                                                                                                                                                                                                                                
+
       00000000 00000000 00000000 11111111 255 in binary as an int
     
 #### Bitwise Operator Compound Assignments
@@ -97,23 +99,43 @@ form is shown here:
       
 ### Relational Operators
 - ==  :arrow_right:  Equal to
-- !=    Not equal to
-- \>    Greater than
-- <     Less than
-- \>=   Greater than or equal to
-- <=    Less than or equal to
+- !=  :arrow_right:  Not equal to
+- \>  :arrow_right:  Greater than
+- <   :arrow_right:  Less than
+- \>= :arrow_right:  Greater than or equal to
+- <=  :arrow_right:  Less than or equal to
 
 ### Boolean Logical Operators
-- & > Logical AND
--  | Logical OR
--  ^ Logical XOR (exclusive OR)
--  || Short-circuit OR
--  && Short-circuit AND
--  ! Logical unary NOT
--  &= AND assignment
--  |= OR assignment
--  ^= XOR assignment
--  == Equal to
--  != Not equal to
--  ?: Ternary if-then-else
+- & :arrow_right: Logical AND
+- | :arrow_right: Logical OR
+- ^ :arrow_right: Logical XOR (exclusive OR)
+- || :arrow_right: Short-circuit OR
+- && :arrow_right: Short-circuit AND
+- ! :arrow_right: Logical unary NOT
+- &= :arrow_right: AND assignment
+- |= :arrow_right: OR assignment
+- ^= :arrow_right: XOR assignment
+- == :arrow_right: Equal to
+- != :arrow_right: Not equal to
+- ?: :arrow_right: Ternary if-then-else
+
+#### Short-Circuit Logical Operators
+- A && B (short circuit AND) :arrow_right: If A is true then B will be evaluated. If A is false, then B will not be
+evaluated.
+- A || B (short circuit OR) :arrow_right: If A is true then result will be true.(no matter what B is) If A is false then
+evaluation of B will determine the final result.
+
+### The Assignment Operator
+- var = expression;
+-  it allows to create a chain of assignments:
+               
+                          
+    int x, y, z;
+    x = y = z = 100; // set x, y, and z to 100
+    
+### The ? Operator
+- expression1 ? expression2 : expression3
+   - expression1 can be any expression that evaluates to a boolean value
+   - If expression1 is true, then expression2 is evaluated
+   - otherwise, expression3 is evaluated
     
