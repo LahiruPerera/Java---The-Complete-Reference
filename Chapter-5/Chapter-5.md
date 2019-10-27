@@ -13,7 +13,7 @@
 - allow to control the flow of the program’s execution based upon conditions known only during run time
 
 #### if
-- The if statement is Java’s conditional branch statement
+- The **if** statement is Java’s conditional branch statement
 - It can be used to route program execution through two different paths
 
 
@@ -22,10 +22,10 @@
     
    -  _statement_ may be a single statement or a compound statement enclosed in curly braces (that is, a _block_). The _condition_ is any expression that returns a **boolean** value. The
       **else** clause is optional.
-- only one statement can appear directly after the if or the else. To include more statements, need to create a block
+- only one statement can appear directly after the **if** or the **else**. To include more statements, need to create a _block_
 
 #### Nested ifs
-- A nested if is an if statement that is the target of another if or else
+- A _nested_ **if** is an **if** statement that is the target of another **if** or **else**
 
    
         if(i == 10) 
@@ -37,7 +37,7 @@
         else a = d; // this else refers to if(i == 10)
 
 #### The if-else-if Ladder
-- based upon a sequence of nested ifs
+- based upon a sequence of _nested ifs_
 
 
         if(condition)
