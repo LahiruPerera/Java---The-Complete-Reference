@@ -131,6 +131,7 @@ evaluation of B will determine the final result.
                
                           
     int x, y, z;
+    
     x = y = z = 100; // set x, y, and z to 100
     
 ### The ? Operator
@@ -138,4 +139,15 @@ evaluation of B will determine the final result.
    - expression1 can be any expression that evaluates to a boolean value
    - If expression1 is true, then expression2 is evaluated
    - otherwise, expression3 is evaluated
+   
+### Operator Precedence
+- the order of precedence for Java operators, range from highest to lowest (ses the table)
+- Operators in the same row are equal in precedence. 
+- In binary operations, the order of evaluation is left to right (except for assignment, which evaluates right to left). 
+- Although the **[ ]**, **( )**, and **.** are technically separators, can also act like operators. In that capacity, they would have the highest precedence. 
+- Also, notice the arrow operator (**->**). It was added by JDK 8 and is used in lambda expressions.
     
+### Using Parentheses
+- using parentheses we can explicitly determine in which order, the expression should be evaluated. (altering the normal precedence of an operator)
+- can be used to help clarify the meaning of an expression
+- adding parentheses won't degrade the performance of the program (no negative effects)
