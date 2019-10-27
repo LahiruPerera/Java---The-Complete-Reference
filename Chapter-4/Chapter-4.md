@@ -129,9 +129,10 @@ evaluation of B will determine the final result.
 - var = expression;
 -  it allows to create a chain of assignments:
                
-                          
-    int x, y, z;
-    x = y = z = 100; // set x, y, and z to 100
+    
+        int x, y, z;
+    
+        x = y = z = 100; // set x, y, and z to 100
     
 ### The ? Operator
 - expression1 ? expression2 : expression3
