@@ -18,7 +18,6 @@
 
 
         if (condition) statement1;
-    
         else statement2;
     
    -  _statement_ may be a single statement or a compound statement enclosed in curly braces (that is, a _block_). The _condition_ is any expression that returns a **boolean** value. The
@@ -41,17 +40,17 @@
 - based upon a sequence of nested ifs
 
 
-    if(condition)
-     statement;
-    else if(condition)
-     statement;
-    else if(condition)
-     statement;
-    .
-    .
-    .
-    else
-     statement;
+        if(condition)
+         statement;
+        else if(condition)
+         statement;
+        else if(condition)
+         statement;
+        .
+        .
+        .
+        else
+         statement;
 
 ### Iteration Statements
 
