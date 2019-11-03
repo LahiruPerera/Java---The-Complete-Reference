@@ -87,7 +87,57 @@
 - The **break** statement is used inside the switch to terminate a statement sequence.
 - When a break statement is encountered, execution pass to the first line of code that follows the entire switch statement (_jumping out of the switch_)
 - If you omit the break, execution will continue on into the next case
+- switching on **strings** can be more expensive than switching on integers
+- don’t use strings in a switch unnecessarily
+- The switch differs from the if in that switch can only test for equality, whereas if can evaluate any type of Boolean expression
+- When Java compiler compiles a switch statement, the Java compiler will inspect each of the case constants and create a
+“jump table” that it will use for selecting the path of execution depending on the value of the expression. 
  
 ### Iteration Statements
+- Java's iteration statements:
+   - for
+   - while
+   - do-while
+
+#### while
+
+    while(condition) {
+     // body of loop
+    }
+    
+- The condition can be any Boolean expression.
+- The body of the loop will be executed as long as the conditional expression is true.
+- When condition becomes false, control passes to the next line of code immediately following the loop
+- If the condition is false then body of the while loop will not execute even once
+
+#### do-while
+- even if the conditional expression is false, execute the body of a loop at least once
+- test the termination expression at the end of the loop rather than at the beginning
+
+    do {
+         // body of loop
+        } while (condition);
+        
+#### for
+- Two forms of **for** loop:
+   - **for**
+   - **for-each**
+
+#### for
+
+    for(initialization; condition; iteration) {
+     // body
+    }
+    
+- initialization - sets the value of the loop control variable, which acts as a counter that controls the loop
+- condition - must be a boolean expression, tests the loop control variable against a target value. If true, then body of the loop is executed.
+Else, the loop terminates.
+- iteration - an expression that increments or decrements the loop control variable
+- Can declare Loop Control Variables inside or outside of the for Loop
+- To allow two or more variables to control a for loop, Java permits you to include multiple statements in both the initialization and iteration portions of the for. Each
+  statement is separated from the next by a comma.
 
 ### Jump Statements
+
+    
+    
