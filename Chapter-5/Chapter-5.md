@@ -178,11 +178,20 @@ Else, the loop terminates.
           **loop** or a **switch**. They can be any block. Further, you can specify precisely where execution
           will resume, because this form of **break** works with a label.
         - General form: `break label;`
-        - can use a labeled break statement to exit from a set of nested blocks. But you cannot use break to transfer control out of a block
-          that does not enclose the break statement
+        - can use a labeled **break** statement to exit from a set of nested blocks. But you cannot use **break** to transfer control out of a block
+          that does not enclose the **break** statement
+        - To name a block, put a label at the start of it. A label is any valid Java identifier followed by a colon.
 
 #### Continue
+- If we want to skip running of loop body for particular iteration then we can use **continue**
+- In **while** and **do-while** loops, a continue statement causes control to be transferred directly to the conditional expression
+  that controls the loop. In a **for** loop, control goes first to the iteration portion of the for
+  statement and then to the conditional expression. For all three loops, any intermediate
+  code is bypassed.
+  
 #### Return
+- The **return** statement is used to explicitly return from a method. That is, it causes program control to transfer back to the caller of the method.
+- As soon as **return** is executed, control passes back to the caller
 
     
     
