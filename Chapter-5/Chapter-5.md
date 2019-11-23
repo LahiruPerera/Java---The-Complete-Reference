@@ -134,10 +134,55 @@
 Else, the loop terminates.
 - iteration - an expression that increments or decrements the loop control variable
 - Can declare Loop Control Variables inside or outside of the for Loop
-- To allow two or more variables to control a for loop, Java permits you to include multiple statements in both the initialization and iteration portions of the for. Each
+- To allow two or more variables to control a for loop, Java permits you to include multiple statements in both the initialization and iteration portions of the **for**. Each
   statement is separated from the next by a comma.
+  
+#### The For-Each Version of the for Loop
+- This was introduced by beginning with JDK 5.
+- A for-each style loop is designed to cycle through a collection of objects, such as an array, in strictly sequential fashion, from start to finish.
+- The for-each style of for is also referred to as the enhanced for loop
+
+    
+    General form of for each
+    for(type itr-var : collection) statement-block
+    type - the type
+    itr-var - the name of an iteration variable
+    collection - the collection being cycled through
+    
+-  With each iteration of the loop, the next element in the collection is retrieved and stored in itr-var. 
+- The loop repeats until all elements in the collection have been obtained
+- The iteration variable of for-each loop is _read-only_.
+- the **for** can cycle through the elements of any collection of objects
+
+
+- **Nested Loops** - apply one loop inside another loop
 
 ### Jump Statements
+- Java supports three jump statements: **break**, **continue**, and **return**. These statements transfer
+ control to another part of the program
+ 
+#### Break
+- the **break** statement has three uses:
+    - it terminates a statement sequence in a **switch** statement
+    
+    - it can be used to exit a loop :
+        - By using break, can force immediate termination of a loop, bypassing the conditional expression and any remaining code in the body of the loop
+        - When a **break** statement is encountered inside a loop, the loop is terminated and program control resumes at the next statement following the loop
+        - The **break** statement can be used with any of Java’s loops, including intentionally infinite loops
+        - When used inside a set of nested loops, the **break** statement will only break out of the innermost loop
+        
+    - it can be used as a “civilized” form of goto
+        - Java does not have a goto statement because it provides a way to branch in an arbitrary and unstructured manner. 
+        This usually makes goto-ridden code hard to understand and hard to maintain. It also prohibits certain compiler optimizations
+        - By using this form of **break**, you can, break out of one or more blocks of code. These blocks need not be part of a
+          **loop** or a **switch**. They can be any block. Further, you can specify precisely where execution
+          will resume, because this form of **break** works with a label.
+        - General form: `break label;`
+        - can use a labeled break statement to exit from a set of nested blocks. But you cannot use break to transfer control out of a block
+          that does not enclose the break statement
+
+#### Continue
+#### Return
 
     
     
