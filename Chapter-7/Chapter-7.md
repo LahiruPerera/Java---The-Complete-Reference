@@ -67,4 +67,24 @@ to the parameter that receives the argument has no effect outside the method
 - two options to change strings:
     - create a new one that contains the modifications
     - using **StringBuffer** and **StringBuilder**, which allow strings to be altered
-- 
+- Strings can be constructed in a variety of ways.
+    - Easiest way is: String myString = "this is a test";
+- The **+** Operator is used to concatenate two strings
+- The String class contains several methods:
+    - **equals()** - test two strings for equality
+    - **length()** - can obtain the length of a string
+    - **charAt( )** - can obtain the character at a specified index within a string
+    
+### Command-Line Arguments
+- Sometimes you will want to pass information into a program when you run it. This is accomplished by passing _command-line arguments_ to **main( )** method.
+- A command-line argument is the information that directly follows the program’s name on the command line when it is executed.
+- They are stored as strings in a **String** array passed to the **args** parameter of **main( )**.
+- To pass command line arguments: java _classname_ _arg1 arg2 arg3_
+- All command-line arguments are passed as strings.
+
+### Varargs: Variable-Length Arguments
+- Java included this feature, beginning with **JDK 5**.
+- _variable-length arguments (varargs)_ - a feature that simplifies the creation of methods that need to take a variable number of arguments
+- A method that takes a variable number of arguments is called a _variable-arity method_, or simply a _varargs method_.
+- A variable-length argument is specified by three periods (**…**)
+- A method can have “normal” parameters along with a variable-length parameter. However, the **variable-length parameter** must be the _last parameter_ declared by the method
