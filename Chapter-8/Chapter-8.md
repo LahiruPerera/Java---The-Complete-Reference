@@ -30,8 +30,31 @@
 - Superclass has no knowledge about what a subclass add to it.  
   
 ### Using super
+- Whenever a subclass needs to refer to its immediate superclass, it can do so by use of the keyword **super**
+- **super** has two general forms. 
+    - Using super to Call Superclass Constructors
+        - A subclass can call a constructor defined by its superclass by use of the following form of
+          super:
+          _super(arg-list);_
+        - When a subclass calls **super( )**, it is calling the constructor of its immediate superclass.
+        - **super( )** must always be the first statement executed inside a subclass constructor.
+        
+    - The second is used to access a member of the superclass that has been hidden by a member of a subclass.
+        - It always refers to the superclass of the subclass in which it is used
+        - _super.member_ - member can be either a method or an instance variable
+        - when member names of a subclass hide members by the same name in the superclass
 
 ### Creating a multilevel hierarchy
+- For example, given three classes called A, B, and C, C can be a subclass of B, which
+  is a subclass of A. When this type of situation occurs, each subclass inherits all of the traits
+  found in all of its superclasses. In this case, C inherits all aspects of B and A.
+  
+  
+                A
+               / 
+              B
+             /
+            C
 
 ### When constructors are executed
 
