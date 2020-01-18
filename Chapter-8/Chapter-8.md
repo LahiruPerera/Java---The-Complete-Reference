@@ -95,7 +95,7 @@
 
 ### The object class
 - All other classes are subclasses of **Object**.
-- This means that a reference variable of type Object can refer to an object of any other class. 
+- This means that a reference variable of type **Object** can refer to an object of any other class. 
 - Also, since arrays are implemented as classes, a variable of type Object can also refer to any array.
-- The methods getClass( ), notify( ), notifyAll( ), and wait( ) are declared as final
-- equals( ) and toString( ) methods can override.
+- The methods **getClass( )**, **notify( )**, **notifyAll( )**, and **wait( )** are declared as final
+- **equals( )** and **toString( )** methods can override.
