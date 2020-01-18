@@ -87,5 +87,15 @@
 - Can have final methods
 
 ### Using final with inheritance
+- The keyword **final** has three uses:
+    - It can be used to create the equivalent of a named constant
+    - Using final to Prevent Overriding (Methods declared as **final** cannot be overridden)
+    - Using final to Prevent Inheritance
+        - Declaring a class as **final** implicitly declares all of its methods as final, too.
 
 ### The object class
+- All other classes are subclasses of **Object**.
+- This means that a reference variable of type Object can refer to an object of any other class. 
+- Also, since arrays are implemented as classes, a variable of type Object can also refer to any array.
+- The methods getClass( ), notify( ), notifyAll( ), and wait( ) are declared as final
+- equals( ) and toString( ) methods can override.
