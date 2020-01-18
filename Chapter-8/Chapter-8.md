@@ -57,12 +57,34 @@
             C
 
 ### When constructors are executed
+- In a class hierarchy, constructors complete their execution in order of derivation, from superclass to subclass. 
 
 ### Method overriding
+- When an overridden method is called from within its subclass, it will always refer to the version of that method defined by the subclass
+- The version of the method defined by the superclass will be hidden.
+- If you wish to access the superclass version of an overridden method, you can do so by using **super**. ( super.methodName() )
+- Method overriding occurs only when the names and the type signatures of the two methods are identical.
+- If they are not, then the two methods are simply overloaded
 
 ### Dynamic method dispatch
+- Method overriding forms the basis for one of Java’s most powerful concepts: dynamic method dispatch
+- Dynamic method dispatch is the mechanism by which a call to an overridden method is resolved at run time, rather than
+  compile time. Dynamic method dispatch is important because this is how Java implements run-time polymorphism.
+- _A superclass reference variable can refer to a subclass object_.
+- When different types of objects are referred to, different versions of an overridden method
+  will be called. In other words, _it is the type of the object being referred to_ (not the type of the
+  reference variable) that determines which version of an overridden method will be executed.
 
 ### Using abstract classes
+- **Abstract methods** should be overridden by subclasses.
+- Any class that contains one or more abstract methods must also be declared abstract
+- Must be declared with an **abstract** keyword.
+- Can have abstract and non-abstract methods (  concrete methods are also allowed in abstract classes ).
+- Can not be instantiated. ( no objects of an abstract class )
+- Such objects would be useless, because an abstract class is not fully defined
+- Cannot declare abstract constructors, or abstract static methods
+- Any subclass of an abstract class must either _implement all of the abstract methods_ in the superclass, or be _declared abstract_ itself
+- Can have final methods
 
 ### Using final with inheritance
 
