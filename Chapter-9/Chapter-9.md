@@ -27,6 +27,15 @@
    | public          | y            | y              | y                        | y                            |
 
 ### Importing Packages
+- This is the general form of the import statement:
+
+
+    import pkg1 [.pkg2].(classname | *);
+
+- All of the standard Java classes included with Java are stored in a package called **java**.
+- The basic language functions are stored in a package inside of the java package called **java.lang**.
+- **java.lang** is implicitly imported by the compiler for all programs.
+- when a package is imported, only those items within the package declared as public will be available to non-subclasses in the importing code
 
 ### Interfaces
 
