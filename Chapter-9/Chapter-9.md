@@ -30,7 +30,7 @@
 - This is the general form of the import statement:
 
 
-    import pkg1 [.pkg2].(classname | *);
+        import pkg1 [.pkg2].(classname | *);
 
 - All of the standard Java classes included with Java are stored in a package called **java**.
 - The basic language functions are stored in a package inside of the java package called **java.lang**.
@@ -38,9 +38,20 @@
 - when a package is imported, only those items within the package declared as public will be available to non-subclasses in the importing code
 
 ### Interfaces
-
-### Default Interface Method
+- Using the keyword **interface**, you can fully abstract a class’ interface from its implementation.
+- Using interface, you can specify what a class must do, but not how it does it.
+- These are syntactically similar to classes, but they lack instance variables, and their methods are declared without any body.
+- Any number of classes can implement an interface. (  one class can implement any number of interfaces )
+- By providing the **interface** keyword, Java allows you to fully utilize the “one interface, multiple methods” aspect of polymorphism.
+- Interfaces are designed to support dynamic method resolution at run time.
+- For interfaces with default access, the interface is only available to other members of the package in which it is declared
+- When it is declared as public, the interface can be used by any other code.
+- In JDK 8, it is possible to add a _default implementation_ to an interface method.
+- The addition of default methods does not change a key aspect of interface.
+- The default method implementation by a class is optional.
 
 ### Use static Methods in an Interface
-
+- JDK 8 added another new capability to **interface**: the ability to define one or more **static** methods
+- No implementation of the interface is necessary, and no instance of the interface is required, in order to call a static method
+- Static interface methods are not inherited by either an implementing class or a subinterface.
 
