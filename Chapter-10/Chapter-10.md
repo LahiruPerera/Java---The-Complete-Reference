@@ -7,19 +7,19 @@
 - The general form of an exception-handling block:
 
 
-    try {
-     // block of code to monitor for errors
-     }
-     catch (ExceptionType1 exOb) {
-     // exception handler for ExceptionType1
-     }
-     catch (ExceptionType2 exOb) {
-     // exception handler for ExceptionType2
-     }
-     // ...
-     finally {
-     // block of code to be executed after try block ends
-     }
+            try {
+             // block of code to monitor for errors
+             }
+             catch (ExceptionType1 exOb) {
+             // exception handler for ExceptionType1
+             }
+             catch (ExceptionType2 exOb) {
+             // exception handler for ExceptionType2
+             }
+             // ...
+             finally {
+             // block of code to be executed after try block ends
+             }
 
 
 ### Exception Types
