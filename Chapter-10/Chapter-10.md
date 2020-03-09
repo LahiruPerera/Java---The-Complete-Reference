@@ -55,7 +55,7 @@
 of type **Error** or **RuntimeException**, or any of their subclasses. All other exceptions that a method can throw must be declared in the **throws** clause.
 
 ### finally
-- **Finally** creates a block of code that will be executed after******** a **try** /**catch** block has completed and before the code following the **try**/**catch** block. 
+- **Finally** creates a block of code that will be executed after a **try** /**catch** block has completed and before the code following the **try**/**catch** block. 
 - The **finally** block will execute whether or not an exception is thrown. 
 - If an exception is thrown, the **finally** block will execute even if no **catch** statement matches the exception.
 - Any time a method is about to return to the caller from inside a **try**/**catch** block, via an uncaught exception or an explicit return
