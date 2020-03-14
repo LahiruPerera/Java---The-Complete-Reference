@@ -62,11 +62,23 @@ of type **Error** or **RuntimeException**, or any of their subclasses. All other
   statement, the finally clause is also executed just before the method returns.
 - The **finally** clause is optional. However, each **try** statement requires at least one **catch** or a **finally** clause.
 
-### Java's Built-in Exceptions
-
 ### Creating your own exception subclass
+- Just define a subclass of Exception
+- Your subclasses don’t need to actually implement anything — it is their existence in the type system that allows you to use them as exceptions
+- The Exception class does not define any methods of its own. It does, of course, inherit those methods provided by Throwable. 
+- Thus, all exceptions, including those that you create, have the methods defined by Throwable available to them.
 
 ### Chained Exceptions
+- Introduced with JDK 1.4.
+- The chained exception feature allows you to associate another exception with an exception. This second exception describes the cause of the first exception.
+- To allow chained exceptions, two constructors and two methods were added to **Throwable**. The constructors are shown here:
+    - Throwable(Throwable causeExc)
+    - Throwable(String msg, Throwable causeExc)
+- These 2 constructors have also been added to the **Error**, **Exception**, and **RuntimeException** classes.
+- The chained exception methods supported by **Throwable** are **getCause( )** and initCause( ).
+- The **getCause( )** method returns the exception that underlies the current exception. If there is no underlying exception, null is returned.
+- The **initCause( )** method associates _causeExc_ with the invoking exception and returns a reference to the exception. Thus, you
+  can associate a cause with an exception after the exception has been created.
 
 ### 3 recently added exception features
 
