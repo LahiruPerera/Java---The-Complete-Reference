@@ -78,8 +78,22 @@ of type **Error** or **RuntimeException**, or any of their subclasses. All other
 - The chained exception methods supported by **Throwable** are **getCause( )** and initCause( ).
 - The **getCause( )** method returns the exception that underlies the current exception. If there is no underlying exception, null is returned.
 - The **initCause( )** method associates _causeExc_ with the invoking exception and returns a reference to the exception. Thus, you
-  can associate a cause with an exception after the exception has been created.
+  can associate a cause with an exception after the exception has been created. However, the cause exception can be set only once. 
+  Thus, you can call initCause( ) only once for each exception object.
+- Chained exceptions can be carried on to whatever depth is necessary.
 
 ### 3 recently added exception features
+- The first automates the process of releasing a resource, such as a file, when it is no longer needed. It is based on an expanded form of the **try** statement called
+  _try-with-resources_.
+- The second feature is called _multi-catch_.
+    - The multi-catch feature allows two or more exceptions to be caught by the same **catch** clause.
+    - Instead of having to catch each exception type individually, you can use a single **catch** clause to handle all of the
+      exceptions without code duplication.
+    - To use a multi-catch, separate each exception type in the **catch** clause with the **OR** operator.
+
+- Third is sometimes referred to as _final rethrow_ or _more precise rethrow_.
+    - This feature restricts the type of exceptions that can be rethrown to only those checked exceptions that the associated 
+    try block throws, that are not handled by a preceding catch clause, and that are a subtype or supertype of the parameter.
 
 ### Using exceptions
+- Java’s exception-handling statements should not be considered a general mechanism for nonlocal branching.
